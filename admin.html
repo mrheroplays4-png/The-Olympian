@@ -1,0 +1,22 @@
+<h1>Admin Panel</h1>
+<h2>Login</h2>
+<input id="adminUser" placeholder="Username">
+<input id="adminPass" placeholder="Password">
+<button onclick="adminLogin()">Login</button>
+<div id="adminPanel" style="display:none">
+  <h2>Create Game</h2>
+  <input id="homeTeam" placeholder="Home Team">
+  <input id="awayTeam" placeholder="Away Team">
+  <input id="homeOdds" placeholder="Home Odds (1.8)">
+  <input id="awayOdds" placeholder="Away Odds (2.0)">
+  <input id="homeSpread" placeholder="Home Spread (-3)">
+  <input id="awaySpread" placeholder="Away Spread (+3)">
+  <input id="overUnder" placeholder="Over/Under Total (50)">
+  <button onclick="createGame()">Create Game</button>
+  <h2>Resolve Game</h2>
+  <select id="resolveSelect"></select>
+  <input id="homeScore" type="number" placeholder="Home Score">
+  <input id="awayScore" type="number" placeholder="Away Score">
+  <button onclick="resolveGame()">Resolve</button>
+</div>
+<script src="script.js"></script>
