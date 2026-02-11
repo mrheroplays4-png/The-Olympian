@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Olympian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🏆 The Olympian</h1>
+<div id="loginDiv">
+  <h2>Login / Sign Up</h2>
+  <input id="username" placeholder="Username">
+  <button onclick="login()">Login / Create</button>
+</div>
+<div id="dashboardDiv" style="display:none">
+  <h2>Welcome, <span id="userDisplay"></span> | Balance: <span id="balance"></span> Blue Bucks</h2>
+  <h3>Games</h3><div id="games"></div>
+  <h3>Parlay</h3><ul id="parlayList"></ul>
+  <input id="parlayAmount" type="number" placeholder="Bet Amount">
+  <button onclick="placeParlay()">Place Parlay</button>
+  <h3>Current Bets</h3><ul id="currentBets"></ul>
+  <h3>Leaderboard</h3><ol id="leaderboard"></ol>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
